@@ -1,0 +1,42 @@
+.bayzid{
+	background-image: url(bayzid.jpg);
+	height: 400px;
+	width: 400px;
+	margin: 100px auto;
+	background-size: cover;
+	position: relative;
+}
+.bayzid:before{
+	height:400px;
+	width: 200px;
+	background: green;
+	content:'';
+	display: block;
+	clear: both;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 2s;
+}
+.bayzid:after{
+	height:400px;
+	width: 200px;
+	background: green;
+	content:'';
+	display: block;
+	clear: both;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: 2s;
+}
+.bayzid:hover:before{
+	left: -200px;
+	transform: rotatey(180deg);
+	background: #d35400;
+}
+.bayzid:hover:after{
+	right: -200px;
+	transform: rotatey(180deg);
+	background: #d35400;
+}
